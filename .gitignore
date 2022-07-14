@@ -11,6 +11,9 @@
 !/test/**/*.h
 !/test/**/*.cpp
 
+!/standalone/
+!/standalone/**/*.cpp
+
 !/**/CMakeLists.txt
 
 !/README.md

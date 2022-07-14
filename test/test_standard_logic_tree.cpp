@@ -21,6 +21,7 @@ const std::vector<std::string> kExpression = {
 	"((A&B) | (C&D)) & (E|F)",
 	"((A|B) & (C|D)) | (E&F)",
 	"(A & B & C) | (A & B & D) | (A & C & E) | (A & F)",
+	"(A & B & C) | (A & B & D) | (A & C & E) | (A & F) | B | G",
 	"((A&B&C)|D|(E&F)|H|I)&(J|K)",
 	"(A0&A3) & ( (A4|A7|A8|A12|A13|A15) | (B0|B3|B4|B7|B8|B11) | (C0|C3) | (((C7&C11)|C4|C8) & C12) )"
 };
@@ -32,6 +33,7 @@ const std::vector<std::string> kOutput = {
 	"(E | F) & (A | C) & (B | C) & (A | D) & (B | D)",
 	"(A | B | E) & (A | B | F) & (C | D | E) & (C | D | F)",
 	"(B | C | F) & (C | D | F) & (B | E | F) & A",
+	"(A | B | G) & (B | C | D | G) & (B | E | F | G)",
 	"(J | K) & (A | D | E | H | I) & (B | D | E | H | I) & (C | D | E | H | I) & (A | D | F | H | I) & (B | D | F | H | I) & (C | D | F | H | I)"
 };
 
@@ -85,7 +87,7 @@ TEST(StandardLogicTreeTest, OutputString) {
 
 		StandardLogicTree tree(parser.Root());
 
-		tree.PrintTree();
+		// tree.PrintTree();
 		std::stringstream ss;
 		ss << tree;
 		EXPECT_EQ(ss.str(), kOutput[i])

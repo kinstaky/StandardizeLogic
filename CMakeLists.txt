@@ -68,8 +68,8 @@ FetchContent_MakeAvailable(compare_logic)
 # The complied library code
 add_subdirectory(src)
 
-# # Standalone executable program.
-# add_subdirectory(standalone)
+# Standalone executable program.
+add_subdirectory(standalone)
 
 # add test
 if (BUILD_TESTING)

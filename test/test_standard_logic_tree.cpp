@@ -10,6 +10,7 @@
 #include "parser/lexer.h"
 #include "logical_grammar.h"
 #include "parser/syntax_parser.h"
+#include "logic_comparer.h"
 
 
 const std::vector<std::string> kExpression = {
@@ -33,6 +34,39 @@ const std::vector<std::string> kOutput = {
 	"(B | C | F) & (C | D | F) & (B | E | F) & A",
 	"(J | K) & (A | D | E | H | I) & (B | D | E | H | I) & (C | D | E | H | I) & (A | D | F | H | I) & (B | D | F | H | I) & (C | D | F | H | I)"
 };
+
+
+
+// TEST(StandardLogicTreeTest, CompareValue) {
+// 	for (size_t i = 0; i < kExpression.size(); ++i) {
+// 		Lexer lexer;
+// 		LogicalGrammar grammar;
+// 		SLRSyntaxParser parser(&grammar);
+// 		std::vector<TokenPtr> tokens;
+
+// 		ASSERT_EQ(lexer.Analyse(kExpression[i], tokens), 0)
+// 			<< "Error: lexer analyse " << i;
+// 		ASSERT_EQ(parser.Parse(tokens), 0)
+// 			<< "Error: parser parse " << i;
+		
+
+// 		StandardLogicTree tree(parser.Root());
+
+// 		EXPECT_LE(tree.Root()->Depth(), 2)
+// 			<< "Error: depth larger than 2 " << i;
+
+// 		std::stringstream ss;
+// 		ss << tree;
+
+// 		LogicComparer comparer;
+// 		EXPECT_TRUE(comparer.Compare(kExpression[i], ss.str()))
+// 			<< "Error: compare not equal " << i;
+
+// 		std::cout << "finish test case " << i << std::endl;
+// 		std::cout << "-----------------------------" << std::endl;
+// 	}
+// }
+
 
 
 

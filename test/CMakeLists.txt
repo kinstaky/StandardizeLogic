@@ -18,7 +18,7 @@ target_compile_features(
 target_link_libraries(
 	test_standard_logic_tree
 	PRIVATE gtest_main
-	PRIVATE standard_logic_tree lexer logical_grammar syntax_parser
+	PRIVATE standard_logic_tree lexer logical_grammar syntax_parser logic_comparer
 )
 
 

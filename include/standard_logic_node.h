@@ -309,8 +309,8 @@ public:
 
 private:
 
-	int op_type_;										// operator type
 	StandardLogicNode *parent_;							// pointer to the parent node
+	int op_type_;										// operator type
 	std::vector<StandardLogicNode*> branches_;			// branches
 	std::bitset<kMaxIdentifier> leaves_;				// leaves
 };

@@ -14,6 +14,10 @@ target_compile_features(
 	standard_logic_node
 	PRIVATE cxx_std_17
 )
+target_compile_options(
+	standard_logic_node
+	PRIVATE -Werror -Wall -Wextra
+)
 target_link_libraries(
 	standard_logic_node
 	PUBLIC token 
@@ -32,6 +36,10 @@ target_include_directories(
 target_compile_features(
 	standard_logic_tree
 	PRIVATE cxx_std_17
+)
+target_compile_options(
+	standard_logic_tree
+	PRIVATE -Werror -Wall -Wextra
 )
 target_link_libraries(
 	standard_logic_tree

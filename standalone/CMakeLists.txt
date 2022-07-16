@@ -7,6 +7,10 @@ target_compile_features(
 	standard_logic_adapter
 	PRIVATE cxx_std_17
 )
+target_compile_options(
+	standard_logic_adapter
+	PRIVATE -Werror -Wall -Wextra
+)
 target_link_libraries(
 	standard_logic_adapter
 	PRIVATE lexer syntax_parser logical_grammar standard_logic_tree

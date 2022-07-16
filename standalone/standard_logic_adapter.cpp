@@ -11,7 +11,7 @@
 #include "logical_grammar.h"
 
 
-int main(int argc, char **argv) {
+int main() {
 	std::string line;
 	std::getline(std::cin, line);
 

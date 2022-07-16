@@ -125,7 +125,7 @@ void StandardLogicNode::PrintString(std::ostream &os, std::vector<Identifier*> i
 		if (!branches_.size()) {
 			is_first = true;
 		}
-		for (int i = 0; i < id_list.size(); ++i) {
+		for (size_t i = 0; i < id_list.size(); ++i) {
 			if (leaves_.test(i)) {
 				if (!is_first) {
 					os << op << id_list[i]->Value();

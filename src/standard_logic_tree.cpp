@@ -260,7 +260,6 @@ StandardLogicNode* StandardLogicTree::ExchangeOrder(StandardLogicNode *node) noe
 	}
 
 	// loop node's leaves
-	size_t loop_node_leaves = 0;
 	for (size_t i = 0, loop_node_leaves = 0; i < id_list_.size() && loop_node_leaves < node->Leaves().count(); ++i) {
 		if (!node->Leaves().test(i)) {
 			continue;
@@ -315,10 +314,6 @@ StandardLogicNode* StandardLogicTree::ExchangeOrder(StandardLogicNode *node) noe
 
 		
 		++loop_node_leaves;
-		// if (loop_node_leaves == node->Leaves().count()) {
-		// 	// finish leaves loop
-		// 	break;
-		// }
 	}
 
 

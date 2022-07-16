@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 3.16)
 
 # Set project properties.
 project(
-	StandardlizeLogic
-	VERSION 1.0
-	DESCRIPTION "A project to convert logic expression into 2 layers and first layer is &"
+	StandardizeLogic
+	VERSION 1.2
+	DESCRIPTION "Standardize the regular logic expression into only two layers while the first layer is '&' and the second is '|'. "
 	LANGUAGES CXX
 )
 

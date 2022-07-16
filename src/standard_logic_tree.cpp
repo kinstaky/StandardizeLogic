@@ -42,9 +42,9 @@ StandardLogicTree::StandardLogicTree(Production<bool> *production) noexcept {
 	}
 
 
-	// standardlize
-	if (StandardLize() != 0) {
-		std::cerr << "standardlize error" << std::endl;
+	// standardize
+	if (Standardize() != 0) {
+		std::cerr << "standardize error" << std::endl;
 		exit(-1);
 	}
 
@@ -126,7 +126,7 @@ int StandardLogicTree::ParseT(StandardLogicNode *node, Production<bool> *product
 
 
 
-int StandardLogicTree::StandardLize() noexcept {
+int StandardLogicTree::Standardize() noexcept {
 	if (ReduceLayers(tree_root_) != 0) {
 		return -1;
 	}

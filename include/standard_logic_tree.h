@@ -1,5 +1,5 @@
 /*
- * This file is part of the StandardlizeLogic program.
+ * This file is part of the StandardizeLogic program.
  */
 
 #ifndef __STANDARD_LOGIC_TREE_H__
@@ -17,7 +17,7 @@ public:
 
 	/// @brief constructor
 	///
-	/// @param[in] production root of production tree to standardlize 
+	/// @param[in] production root of production tree to standardize 
 	///
 	StandardLogicTree(Production<bool> *production) noexcept;
 
@@ -73,11 +73,11 @@ private:
 	int ParseT(StandardLogicNode *node, Production<bool> *production) noexcept;
 
 
-	/// @brief standardlize the tree and convert it into two layers 
+	/// @brief standardize the tree and convert it into two layers 
 	/// 
 	/// @returns 0 on success, -1 on failure
 	///
-	int StandardLize() noexcept;
+	int Standardize() noexcept;
 
 
 	int ReduceLayers(StandardLogicNode *node) noexcept;

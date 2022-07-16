@@ -1,5 +1,5 @@
 /*
- * This file is part of the StandardlizeLogic program.
+ * This file is part of the StandardizeLogic program.
  * 
  * 
  */

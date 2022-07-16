@@ -1,5 +1,5 @@
-# Documentation for StandardlizeLogic
+# Documentation for StandardizeLogic
 
 ## Description
 
-This is a simple program that standardlize the logic expression.
+This is a simple program that standardize the logic expression.

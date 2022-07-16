@@ -60,7 +60,7 @@ endif()
 
 FetchContent_Declare(
 	compare_logic
-	URL https://github.com/kinstaky/CompareLogic/archive/2042df10dd42916fa5b77558eeae8edae62e314e.zip
+	URL https://github.com/kinstaky/CompareLogic/archive/5bc245783d7abd57cef85de35066fd945d36c683.zip
 )
 FetchContent_MakeAvailable(compare_logic)
 

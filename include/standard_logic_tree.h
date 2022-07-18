@@ -36,6 +36,15 @@ public:
 	}
 
 
+	/// @brief get the id list 
+	/// 
+	/// @returns id list
+	///
+	inline std::vector<Identifier*> IdList() const noexcept {
+		return id_list_;
+	}
+
+
 	/// @brief print this tree in tree structure 
 	/// 
 	inline void PrintTree() const noexcept {
